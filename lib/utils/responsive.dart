@@ -29,14 +29,15 @@ class Responsive extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final Size size = MediaQuery.of(context).size;
-    if (size.width >= 1024) {
-      return desktop;
-    } else if (size.width >= 700 && tablet != null) {
-      return tablet!;
-    } else if (size.width >= 500 && mobileLarge != null) {
-      return mobileLarge!;
-    } else {
-      return mobile;
-    }
+    return desktop;
+    // if (size.width >= 100) {
+    //   return desktop;
+    // } else if (size.width >= 700 && tablet != null) {
+    //   return tablet!;
+    // } else if (size.width >= 500 && mobileLarge != null) {
+    //   return mobileLarge!;
+    // } else {
+    //   return mobile;
+    // }
   }
 }

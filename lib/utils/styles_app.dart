@@ -10,13 +10,15 @@ class StylesApp {
     border: OutlineInputBorder(),
   );
 
-  static InputDecoration inputDecorationItem = const InputDecoration(
-    contentPadding: EdgeInsets.symmetric(horizontal: SizesApp.padding10),
-    label: Text(
-      'Dejenos su comentario',
+  static InputDecoration inputDecorationItem = InputDecoration(
+    contentPadding: const EdgeInsets.symmetric(horizontal: SizesApp.padding10),
+    label: const Text(
+      'Username',
     ),
-    suffixIcon: Icon(Icons.comment),
-    labelStyle: TextStyle(color: Colors.black26),
-    border: OutlineInputBorder(),
+    suffixIcon: const Icon(Icons.comment),
+    labelStyle: const TextStyle(color: Colors.black26),
+    border: OutlineInputBorder(
+      borderRadius: BorderRadius.circular(SizesApp.padding20),
+    ),
   );
 }
